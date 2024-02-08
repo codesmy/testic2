@@ -1,0 +1,11 @@
+@mixin mw-992 {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin mw-768 {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}

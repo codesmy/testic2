@@ -1,0 +1,59 @@
+//hero
+.hero {
+    background-color: #303030;
+    position: relative;
+
+    .container {
+        height: 100%;
+    }
+
+    &-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        
+
+        img {
+            position: relative;
+
+            @include mw-992 {
+                max-width: 20em;
+            }
+
+        }
+    }
+
+    .btn-down {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        padding-bottom: 80px;
+        cursor: pointer;
+
+        @include mw-992 {
+            font-size: 16px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 60px;
+            background-color: #fff;
+
+            @include mw-992 {
+                height: 30px;
+            }
+        }
+    }
+}

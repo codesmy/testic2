@@ -1,0 +1,40 @@
+@import 'fonts';
+@import 'reset';
+@import './mixins/breakpoint';
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    @include mw-992 {
+        font-size: 12px;
+    }
+}
+
+.container {
+    position: relative;
+    padding: 40px 80px;
+
+    @include mw-992 {
+        padding: 20px;
+    }
+}
+
+.section {
+    height: 100vh;
+}
+
+* {
+    color: #fff
+}
+
+
+@import './components/burger.scss';
+@import './components/hero.scss';
+@import './components/menu.scss';
